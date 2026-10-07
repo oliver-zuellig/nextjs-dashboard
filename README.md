@@ -18,7 +18,7 @@ Most of the app follows the course's dashboard project. These are the clearest a
 
 - **More interactive search:** the magnifying-glass icon focuses the search field, and an `X` button clears the search. Search updates are debounced and reset pagination to the first page.
 - **Dedicated database handling:** PostgreSQL connection setup lives in `app/lib/db.ts`, which exports the shared SQL client used by the invoice Server Action.
-
+- **Delete Invoice confirm dialog:** A custom confirm dialog is used to ensure confirmation when a invoice is deleted.
 
 ## Getting started
 
