@@ -1,5 +1,15 @@
 import "./ui/global.css";
-import { inter } from '@/app/ui/fonts';
+import { inter } from "@/app/ui/fonts";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: {
+        template: "%s | Acme Dashboard",
+        default: "Acme Dashboard",
+    },
+    description: "Oliver's official Next.js Course Dashboard, built with App Router.",
+    metadataBase: new URL("https://github.com/oliver-zuellig/nextjs-dashboard"),
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
