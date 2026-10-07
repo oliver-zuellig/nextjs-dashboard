@@ -71,7 +71,7 @@ export default function LoginForm() {
                             </>
                         )}
                     </div>
-                    <div>
+                    {/* <div>
                         <a
                             href="https://nextjs.org/learn/dashboard-app/adding-authentication#try-it-out"
                             className="text-blue-500 underline"
@@ -79,7 +79,7 @@ export default function LoginForm() {
                             rel="noopener noreferrer">
                             Hint for User
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </form>
