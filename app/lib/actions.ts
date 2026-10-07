@@ -60,16 +60,6 @@ export async function createInvoice(prevState: State, formData: FormData) {
         };
     }
 
-    /* try {
-        await sql`
-            INSERT INTO invoices (customer_id, amount, status, date)
-            VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
-        `;
-    } catch (error) {
-        console.error('Failed to create invoice:', error);
-        throw new Error('Failed to create invoice.');
-    } */
-
     revalidatePath('/dashboard/invoices');
     redirect('/dashboard/invoices');
 }
